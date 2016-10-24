@@ -20,7 +20,7 @@ javascript:open('http://b.hatena.ne.jp/add?mode=confirm&title='+escape(document.
 
 ### GitHub
 
-- Navigate to the latest **fixed** version of the current blob or tree on `master`
+- Navigate to the newest **permalink** (fixed commit hash) of the current blob or tree on `master`
 
 ```js
 // NOTE: This requires ES.Next fetch API
