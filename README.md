@@ -32,11 +32,19 @@ javascript:!function(a){var b=location.href.match(/^(https:\/\/github\.com\/[^/]
 
 ### Copy title and URL of the current page
 
+- General
+
 ```js
 javascript:!function(a){var c=a.body,e=a.createElement('input'),f=a.title+' '+location.href;e.type='text',e.value=f,c.appendChild(e),e.select(),a.execCommand('copy'),c.removeChild(e)}(document);
 ```
 
-### Copy title and URL of the current page, using BibTeX compatible format
+- Markdown
+
+```js
+javascript:!function(a){var c=a.body,e=a.createElement('input'),f='['+a.title+']('+location.href+')';e.type='text',e.value=f,c.appendChild(e),e.select(),a.execCommand('copy'),c.removeChild(e)}(document);
+```
+
+- BibTeX
 
 ```js
 javascript:!function(a){var c=a.body,e=a.createElement('input'),f='\\bibitem{} '+a.title+'\\\\ \\url{'+location.href+'}';e.type='text',e.value=f,c.appendChild(e),e.select(),a.execCommand('copy'),c.removeChild(e)}(document);
