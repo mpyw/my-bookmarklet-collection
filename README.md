@@ -19,7 +19,7 @@ javascript:window.open('http://b.hatena.ne.jp/add?mode=confirm&title='+escape(do
 `window.fetch`に依存します。
 
 ```js
-javascript:!function(a){var b=location.href.match(/^(https:\/\/github\.com\/[^/]+\/[^/]+)(\/(?:blob|tree))\/[^/]+(\/.+)$/);b&&fetch(b[1]+'/commits/master.atom').then(function(c){return c.text()}).then(function(c){var e=new DOMParser().parseFromString(c,'application/xml').querySelector('entry>link').getAttribute('href').match(/\/commit(\/.+)$/);e&&location.href(b[1]+b[2]+m2[1]+b[3])})}(document);
+javascript:!function(a){var b=location.href.match(/^(https:\/\/github\.com\/[^/]+\/[^/]+)(\/(?:blob|tree))\/[^/]+(\/.+)$/);b&&fetch(b[1]+'/commits/master.atom').then(function(c){return c.text()}).then(function(c){var e=new DOMParser().parseFromString(c,'application/xml').querySelector('entry>link').getAttribute('href').match(/\/commit(\/.+)$/);location.href=b[1]+b[2]+e[1]+b[3]})}(document);
 ```
 
 ## クリップボード操作
