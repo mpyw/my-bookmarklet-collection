@@ -15,7 +15,7 @@ javascript:!function(){var a=encodeURIComponent(document.title),b=encodeURICompo
 - Open a window for adding a new bookmark
 
 ```js
-javascript:open('http://b.hatena.ne.jp/add?mode=confirm&title='+escape(document.title)+'&url='+escape(location.href),'_blank','width=550,height=400,scrollbars=1');
+javascript:open('http://b.hatena.ne.jp/add?mode=confirm&title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'_blank','width=550,height=400,scrollbars=1');
 ```
 
 ## Clipboard Manipulation
