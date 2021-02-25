@@ -39,3 +39,17 @@ javascript:!function(a){var c=a.body,e=a.createElement('input'),f='['+a.title+']
 ```js
 javascript:!function(a){var c=a.body,e=a.createElement('input'),f='\\bibitem{} '+a.title+'\\\\ \\url{'+location.href+'}';e.type='text',e.value=f,c.appendChild(e),e.select(),a.execCommand('copy'),c.removeChild(e)}(document);
 ```
+
+## Adjust <kbd>Tab</kbd> Width (for `*.go` and `Makefile`)
+
+- To 4 spaces
+
+```js
+javascript:!function(){for(var i=0,l=document.all.length;i<l;++i)document.all[i].style.tabSize=4;}();
+```
+
+- To 2 spaces
+
+```js
+javascript:!function(){for(var i=0,l=document.all.length;i<l;++i)document.all[i].style.tabSize=2;}();
+```
