@@ -45,11 +45,11 @@ javascript:!function(a){var c=a.body,e=a.createElement('input'),f='\\bibitem{} '
 - To 4 spaces
 
 ```js
-javascript:!function(){for(var i=0,l=document.all.length;i<l;++i)document.all[i].style.tabSize=4;}();
+javascript:!function(a){var b=a.createElement('style');b.innerHTML='*{tab-size:4;}';a.head.appendChild(b);}(document);
 ```
 
 - To 2 spaces
 
 ```js
-javascript:!function(){for(var i=0,l=document.all.length;i<l;++i)document.all[i].style.tabSize=2;}();
+javascript:!function(a){var b=a.createElement('style');b.innerHTML='*{tab-size:2;}';a.head.appendChild(b);}(document);
 ```
